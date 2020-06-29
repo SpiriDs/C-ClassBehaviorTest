@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Elephants
 {
-    class Elephant
+    internal class Elephant
     {
         public String name;
         public int earSize;
