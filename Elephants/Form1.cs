@@ -25,5 +25,13 @@ namespace Elephants
             lucinda = swapElephant;
             MessageBox.Show("Objects swapped");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lloyd = lucinda;
+            lloyd.earSize = 4321;
+            lucinda.earSize = 1234;
+            lloyd.WhoAmI();
+        }
     }
 }
