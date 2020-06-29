@@ -16,5 +16,14 @@ namespace Elephants
         private void ButtonLloyd_Click(object sender, EventArgs e) => lloyd.WhoAmI();
 
         private void ButtonLucinda_Click(object sender, EventArgs e) => lucinda.WhoAmI();
+
+        private void ButtonSwap_Click(object sender, EventArgs e)
+        {
+            Elephant swapElephant;
+            swapElephant = lloyd;
+            lloyd = lucinda;
+            lucinda = swapElephant;
+            MessageBox.Show("Objects swapped");
+        }
     }
 }
